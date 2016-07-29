@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // change
-        // change 2
-        // change 3
         // Do any additional setup after loading the view, typically from a nib.
     }
 

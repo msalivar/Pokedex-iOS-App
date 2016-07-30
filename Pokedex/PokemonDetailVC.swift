@@ -24,12 +24,13 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
+    @IBOutlet weak var evolveArrow: UIImageView!
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        nameLabel.text = pokemon.name
+        nameLabel.text = pokemon.name.capitalizedString
         let img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
         currentEvoImg.image = img
@@ -53,10 +54,12 @@ class PokemonDetailVC: UIViewController {
         {
             evoLbl.text = "No Evolutions"
             nextEvoImg.hidden = true
+            evolveArrow.hidden = true
         }
         else
         {
             nextEvoImg.hidden = false
+            evolveArrow.hidden = false
             nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
             let str = "Next Evolution: \(pokemon.nextEvolutionName) - lvl \(pokemon.nextEvolutionLvl)"
             evoLbl?.text = str

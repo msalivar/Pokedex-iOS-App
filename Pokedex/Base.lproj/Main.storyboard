@@ -441,6 +441,7 @@
                         <outlet property="defenseLbl" destination="6Xs-NT-0eK" id="Uh2-LO-huo"/>
                         <outlet property="descriptionLbl" destination="gLR-y7-Xc2" id="8QR-vG-5XH"/>
                         <outlet property="evoLbl" destination="Qw3-xR-hYL" id="EC2-uh-mbm"/>
+                        <outlet property="evolveArrow" destination="Q7r-fw-ogf" id="ppo-f8-qkM"/>
                         <outlet property="heightLbl" destination="UVp-eG-z9L" id="9tl-YI-Jpk"/>
                         <outlet property="mainImg" destination="cuq-MI-sMG" id="iGB-Zh-Owc"/>
                         <outlet property="nameLabel" destination="ujd-yJ-axV" id="4iD-Gy-AJX"/>
